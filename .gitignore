@@ -5,6 +5,7 @@
 **/*.exe
 **/*.out
 **/*.o
+**/*
 # Ignore build directories (if applicable)
 build/
 bin/
