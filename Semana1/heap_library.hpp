@@ -1,5 +1,5 @@
 /*
-    Implementation of a Heap Library, includes a Heap class and two derived classes MaxHeap and MinHeap.
+Implementation of a Heap Library, includes a Heap class and two derived classes MaxHeap and MinHeap.
 */
 #ifndef HEAP_LIBRARY_HPP
 #define HEAP_LIBRARY_HPP
@@ -126,7 +126,7 @@ class MinHeap:public Heap {
             int right = rightChild(index);
             int n = heap.size();
             if (left < n && heap[left] < heap[smallest]) {
-                smallest = left;        
+                smallest = left;
             }
             if (right < n && heap[right] < heap[smallest]) {
                 smallest = right;
