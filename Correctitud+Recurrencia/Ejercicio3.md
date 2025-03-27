@@ -147,7 +147,7 @@ $ T(n) \geq kn \log \log n $
 
 Paso inductivo:
 
-$ T(n) = \sqrt{n} T(\sqrt{n}) + n \geq \sqrt{n} [k \sqrt{n} \log \log \sqrt{n}] + n $
+$T(n) = \sqrt{n} T(\sqrt{n}) + n \geq \sqrt{n} [k \sqrt{n} \log \log \sqrt{n}] + n$
 
 $\hspace{3.5cm} \geq kn \log(\frac{1}{2} \log n) +n$
 
@@ -161,6 +161,6 @@ Finalmente, tenemos que $T(n) = \Omega(n\log \log n)$
 
 Es decir, tenemos las cotas superior e inferior:
 
-$ k^\prime n \log \log n \leq T(n) \leq c^\prime n \log \log n$
+$k^\prime n \log \log n \leq T(n) \leq c^\prime n \log \log n$
 
 Por lo tanto :  $T(n) = \Theta(n\log \log n)$
