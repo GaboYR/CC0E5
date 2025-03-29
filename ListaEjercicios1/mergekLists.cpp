@@ -1,5 +1,7 @@
 #include<iostream>
 #include<vector>
+#include<cassert>
+
 #define len(x) (int)x.size()
 std::vector<int> twoWayMerge(const std::vector<int> &x, const std::vector<int> &y) {
     int n = len(x);
@@ -48,29 +50,26 @@ int main () {
         {-2,0,6},
         {5}
     };
+    
     auto res1 = KWayMerge(list1);
+    assert((res1 == std::vector<int>{-2,0,1,2,3,4,5,5,6,7}) && "Prueba 1 fallida");
+
     std::vector<std::vector<int>> list2 = {
         {-2,4,5,8},
         {0,1,2},
         {-1,3,6,7}
     };
     auto res2 = KWayMerge(list2);
+    
+    assert((res2 == std::vector<int>{-2,-1,0,1,2,3,4,5,6,7,8}) && "Prueba 2 fallida");
+
     std::vector<std::vector<int>> lst3 = {
         {-1,1,2,3,4,5}
     };
     auto res3 = KWayMerge(lst3);
 
-    for (auto &x : res1) {
-        std::cout << x << " ";
-    }
-    std::cout << "\n";
-    for (auto &x : res2) {
-        std::cout << x << " ";
-    }
-    std::cout << "\n";
-    for (auto &x : res3) {
-        std::cout << x << " ";
-    }
-    std::cout << "\n";
+    assert((res3 == std::vector<int>{-1,1,2,3,4,5}) && "Prueba 3 fallida");    
+    std::cout << "Todas las pruebas pasaron\n";
+    
     return 0;
 }
