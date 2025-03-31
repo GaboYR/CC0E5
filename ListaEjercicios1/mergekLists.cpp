@@ -34,6 +34,7 @@ std::vector<std::vector<int>> oneStepKWayMerge(const std::vector<std::vector<int
     if (n == 1) res.push_back(x[0]);
     return res;
 }
+
 std::vector<int> KWayMerge(const std::vector<std::vector<int>> &x) {
     int n = len(x);
     if (n <= 1) return x[0];
