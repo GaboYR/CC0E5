@@ -17,3 +17,9 @@
 build/
 bin/
 
+#Ignorar archivos de configuración
+*.config
+*.json
+
+#Ignorar carpeta .vscode
+.vscode/
