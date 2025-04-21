@@ -1,5 +1,5 @@
 /*
-Implementation of a Heap Library, includes a Heap class and two derived classes MaxHeap and MinHeap.
+Implementation of a Binary Heap Library, includes a Heap class and two derived classes MaxHeap and MinHeap.
 */
 #ifndef HEAP_LIBRARY_HPP
 #define HEAP_LIBRARY_HPP
