@@ -51,3 +51,9 @@ add_executable("nombre del ejecutable" "nombre del archivo.cpp")
 
 Para compilar y ejecutar las pruebas, sigue estos pasos:
 Ejecuta el script que contiene el archivo script.sh
+
+Captura de la salida:
+
+![image](/TestC++/image/captura.png)
+
+Dirigete a la carpeta `build` y ejecuta el comando `./runTests` para ejecutar las pruebas.
